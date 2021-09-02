@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to alphinejs</title>
+    <script defer src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+
+</head>
+<body>
+    
+
+    <div x-data="{ counter: 2, name: 'Alphine app' }">
+        <button x-on:click="counter++">Plus</button>
+        <p>
+            show counter <i x-text="counter"></i>
+        </p>
+        <button x-on:click="counter--">Minus</button>
+
+        <div x-data="{ child: true }">
+
+        </div>
+
+    </div>
+
+
+    <div x-data="{ counter: 2 }">
+        <button x-on:click="counter++">Plus</button>
+        <p>
+            show counter <i x-text="counter"></i>
+        </p>
+        <button x-on:click="counter--">Minus</button>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

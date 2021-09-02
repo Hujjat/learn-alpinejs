@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to alphinejs</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+<body>
+
+
+
+    <div x-data="{ open: false }">
+        <button @click="open = !open">Expand</button>
+     
+        <span x-show="open">
+          Content...
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ut quam ipsa ipsum facilis fuga. Facere, dolorem. Error nemo cumque tempora minima maiores officia facilis voluptatem ipsa, nam labore vero.
+        </span>
+    </div>
+    
+
+
+
+</body>
+</html>

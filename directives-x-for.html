@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directives x-for looping</title>
+    <script defer src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+
+</head>
+<body>
+
+    <div x-data="{ title: '', todoList: [ 'Go shopping', 'Record youtube video', 'Read the tech news', 'work on side projects' ] }">
+        
+        <div>
+            <input type="text" x-model="title">
+            <button @click="todoList.push(title); title = '' ">Add todo</button>
+        </div>
+
+        <ul>
+            <template x-for="(todo, index) in todoList">
+                <li x-text="todo" :key="index"></li>
+            </template>
+        </ul>
+    </div>
+
+</body>
+</html>
